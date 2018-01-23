@@ -2,10 +2,95 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
     <title>자기소개 페이지</title>
+    <style>
+      div {
+        display: block;
+      }
+      a {
+        color: #576b95;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      body {
+        text-align: left;
+        direction: ltr;
+        display: block;
+        font-size: 14px;
+        line-height: 18px;
+        margin: 0;
+        padding: 0;
+        font-family: Roboto, 'Droid Sans', Helvetica, sans-serif;
+      }
+      .top-menu {
+        align-items: center;
+        display: flex;
+      }
+      .icon-area {
+        align-items: center;
+        display: flex;
+        height: 44px;
+        margin: 0 auto;
+        position: relative;
+        width: 40px;
+      }
+      .feed-icon {
+        background-image: url(https://facebook.com/rsrc.php/v3/yI/r/WxZxQhUn_lM.png);
+        background-repeat: no-repeat;
+        background-size: 41px 1301px;
+        background-position: 0 -1154px;
+      }
+      .requests-icon {
+        background-image: url(https://facebook.com/rsrc.php/v3/yI/r/WxZxQhUn_lM.png);
+        background-repeat: no-repeat;
+        background-size: 41px 1301px;
+        background-position: 0 -965px;
+      }
+      .messages-icon {
+        background-image: url(/rsrc.php/v3/yI/r/WxZxQhUn_lM.png);
+        background-repeat: no-repeat;
+        background-size: 41px 1301px;
+        background-position: 0 -860px;
+      }
+      .jewel {
+        flex: 1;
+        width: 0;
+      }
+      a .feed {
+        color: inherit;
+        -webkit-tap-highlight-color: rgba(255,255,255,0);
+      }
+    </style>
   </head>
   <body>
+    <div class="top-menu">
+      <div class="jewel">
+        <a class="feed" accesskey="1" href="https://facebook.com/home.php?refid=17" data-sigil="icon">
+          <span style="display:block;height:0;overflow:hidden;position:absolute;width:0;padding:0">News Feed</span>
+          <div class="icon-area">
+            <div class="feed-icon"></div>
+          </div>
+        </a>
+      </div>
+      <div class="jewel">
+        <a class="feed" accesskey="2" href="https://facebook.com/friends/center/requests/?refid=17" data-sigil="icon">
+          <span style="display:block;height:0;overflow:hidden;position:absolute;width:0;padding:0">Friend Requests</span>
+          <div class="icon-area">
+            <div class="requests-icon"></div>
+          </div>
+        </a>
+      </div>
+      <div class="jewel">
+        <a class="feed" accesskey="3" href="https://facebook.com/messages/?refid=17" data-sigil="icon">
+          <span style="display:block;height:0;overflow:hidden;position:absolute;width:0;padding:0">Messages</span>
+          <div class="icon-area">
+            <div class="messages-icon"></div>
+          </div>
+        </a>
+      </div>
+
+    </div>
     <script>
       (function(d, s, id){
          var js, fjs = d.getElementsByTagName(s)[0];
@@ -23,6 +108,10 @@
            });
          };
     </script>
+
+
+
+
 
     <div class="fb-comments" data-href="https://www.facebook.com/profile.php?id=100013378115756" data-width="250px" data-numposts="5"></div>
   </body>
