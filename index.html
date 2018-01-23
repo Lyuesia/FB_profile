@@ -137,6 +137,40 @@
         letter-spacing: -0.25px;
         line-height: 1;
       }
+      .feature-list-inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 1;
+        border-top: 1px solid #f2f2f2;
+        flex: 1;
+      }
+      .feature-item-link {
+        display: block;
+        line-height: 27px;
+        padding: 8px;
+        box-sizing: border-box;
+      }
+      .feature-item-icon {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        width: 20px;
+        height: 20px;
+        top: -1px;
+        background-repeat: no-repeat;
+      }
+      .post {
+        background-image: url(https://static.xx.fbcdn.net/rsrc.php/v3/yS/r/WBNeKyL0eBK.png);
+        background-position: 0 -145px;
+        background-size: 39px 166px;
+      }
+      .feature-item-name {
+        line-height: 16px;
+        font-family: -apple-system, sans-serif;
+        font-size: 11px;
+        display: block;
+      }
       a .feed {
         color: inherit;
       }
@@ -222,7 +256,34 @@
         </div>
       </div>
       <div class="timeline-body">
-
+        <div class="feature-list">
+          <div class="feature-list-inner">
+            <div class="feature-item">
+              <a class="feature-item-link" id="share">
+                <i class="feature-item-icon post"></i>
+                <span class="feature-item-name">Post</span>
+              </a>
+            </div>
+            <div class="feature-item">
+              <a class="feature-item-link">
+                <i class="feature-item-icon update-info"></i>
+                <span class="feature-item-name">Update Info</span>
+              </a>
+            </div>
+            <div class="feature-item">
+              <a class="feature-item-link">
+                <i class="feature-item-icon activity-log"></i>
+                <span class="feature-item-name">Activity Log</span>
+              </a>
+            </div>
+            <div class="feature-item">
+              <a class="feature-item-link">
+                <i class="feature-item-icon more"></i>
+                <span class="feature-item-name">More</span>
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
