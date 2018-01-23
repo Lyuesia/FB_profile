@@ -64,6 +64,26 @@
     </style>
   </head>
   <body>
+
+    <script>
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "https://connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+         window.fbAsyncInit = function() {
+           FB.init({
+             appId            : '1332895513489426',
+             autoLogAppEvents : true,
+             xfbml            : true,
+             version          : 'v2.11'
+           });
+         };
+    </script>
+
+
     <div class="top-menu">
       <div class="jewel">
         <a class="feed" accesskey="1" href="https://facebook.com/home.php?refid=17" data-sigil="icon">
@@ -91,23 +111,7 @@
       </div>
 
     </div>
-    <script>
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "https://connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-         window.fbAsyncInit = function() {
-           FB.init({
-             appId            : '1332895513489426',
-             autoLogAppEvents : true,
-             xfbml            : true,
-             version          : 'v2.11'
-           });
-         };
-    </script>
+
 
 
 
